@@ -7,7 +7,7 @@ var __importDefault = (commonjsGlobal && commonjsGlobal.__importDefault) || func
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InputNumber = void 0;
 const react_1 = __importDefault(react);
-const InputNumber = ({ value, onChange, errors, disabled, }) => (react_1.default.createElement("input", { className: "form-control" + (errors && errors.length > 0 ? "  is-invalid" : ""), disabled: disabled, type: "number", value: value || "", onChange: (v) => v.target.value === ""
+const InputNumber = ({ value, onChange, errors, disabled, }) => (react_1.default.createElement("input", { className: "form-control" + (errors && errors.length > 0 ? "  is-invalid" : ""), disabled: disabled, type: "number", value: isNaN(Number(value)) ? "" : value, onChange: (v) => v.target.value === ""
         ? onChange(undefined)
         : onChange(Number(v.target.value)) }));
 exports.InputNumber = InputNumber;
