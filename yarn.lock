@@ -490,6 +490,31 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@nexys/core-list@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@nexys/core-list/-/core-list-0.0.5.tgz#1149ab4f0515132bc0cc09991d42d0a5c6343e40"
+  integrity sha512-c7PDoPAXP0wxbI8fTh/5wpWRrbv7VdgZucM6bzeBqUR4DYvNnXOJ8SiQfZNdzAQeBCRkGX2hCxuyyVIBjyQhcA==
+
+"@nexys/react-bootstrap@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@nexys/react-bootstrap/-/react-bootstrap-0.3.1.tgz#aca2ce5084336f641e4b9a0dd53bcce2f25863aa"
+  integrity sha512-9OI9xYaJ6htbqsucsCRzPmL5kVVtWOxlLPo445AxXrFmS2BH+hhCS/VuPi2nbHvC7/S9JLH3tZeeMnVnBKKVFg==
+  dependencies:
+    "@nexys/core-list" "^0.0.5"
+    "@nexys/validation" "^2.1.2"
+
+"@nexys/utils@^3.9.14":
+  version "3.9.14"
+  resolved "https://registry.yarnpkg.com/@nexys/utils/-/utils-3.9.14.tgz#db7e3581dd3f15990334842111be35d5aba443ca"
+  integrity sha512-ab+iVapztGguPbHaACoNXtn65iWh+hSqNOoKnIQkmldsQ4yUsRpPhs+Us+x2g5A3/ShwxREAz8DMLp0rpYcWig==
+
+"@nexys/validation@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@nexys/validation/-/validation-2.1.2.tgz#1dda5a8e18760c44f66a86e90030d27fea82238d"
+  integrity sha512-p47+6HC2ZXwDNRHA43cN+HyDhfcAZ9QhoyXKp0b+EsmzEGkHDe1ZyWJzqUKwpXVU22c3l5ujD8+mCw0CHLVbTw==
+  dependencies:
+    "@nexys/utils" "^3.9.14"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.2.tgz#858f5c4b48d80778fde4b9d541f27edc0d56488b"
