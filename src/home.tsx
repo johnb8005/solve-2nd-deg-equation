@@ -1,5 +1,5 @@
 import React from "react";
-import { title, github } from "./config";
+import { title } from "./config";
 
 import Input from "@nexys/react-bootstrap/dist/form/input/number";
 import * as S from "./lib/solve";
@@ -54,13 +54,6 @@ export default () => {
           Submit
         </button>
       </form>
-
-      <p>
-        <a href={github.url}>
-          <i className="fa fa-code"></i> Source
-        </a>
-        &nbsp;available under MIT license. Contributions are welcome.
-      </p>
     </>
   );
 };
