@@ -1,11 +1,15 @@
 import React from "react";
 
 import { Solution } from "./type";
+import { formatNumber } from "./utils";
 
 const Solution = ({ solution }: { solution: Solution }) => (
-  <code>
-    x1={solution[0]}, x2={solution[1]}
-  </code>
+  <>
+    <h3>Solution</h3>
+    <code>
+      x1={formatNumber(solution[0])}, x2={formatNumber(solution[1])}
+    </code>
+  </>
 );
 
 export default Solution;
