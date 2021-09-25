@@ -50,7 +50,9 @@ export default () => {
         <Input value={state.a} onChange={(a) => setState({ ...state, a })} />
         <Input value={state.b} onChange={(b) => setState({ ...state, b })} />
         <Input value={state.c} onChange={(c) => setState({ ...state, c })} />
-        <button type="submit">Submit</button>
+        <button className={"btn btn-primary"} type="submit">
+          Submit
+        </button>
       </form>
 
       <p>
