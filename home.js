@@ -1,5 +1,5 @@
 import React from "./_snowpack/pkg/react.js";
-import {title, github} from "./config.js";
+import {title} from "./config.js";
 import Input from "./_snowpack/pkg/@nexys/react-bootstrap/dist/form/input/number.js";
 import * as S from "./lib/solve.js";
 const Solution = ({solution}) => {
@@ -36,9 +36,5 @@ export default () => {
   }), /* @__PURE__ */ React.createElement("button", {
     className: "btn btn-primary",
     type: "submit"
-  }, "Submit")), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("a", {
-    href: github.url
-  }, /* @__PURE__ */ React.createElement("i", {
-    className: "fa fa-code"
-  }), " Source"), " available under MIT license. Contributions are welcome."));
+  }, "Submit")));
 };
