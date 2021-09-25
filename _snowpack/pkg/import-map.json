@@ -1,6 +1,7 @@
 {
   "imports": {
     "@nexys/react-bootstrap/dist/form/input/number": "./@nexys/react-bootstrap/dist/form/input/number.js",
+    "@nexys/react-bootstrap/dist/form/wrapper": "./@nexys/react-bootstrap/dist/form/wrapper.js",
     "react": "./react.js",
     "react-dom": "./react-dom.js",
     "react-router-dom": "./react-router-dom.js"
