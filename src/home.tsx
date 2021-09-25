@@ -7,8 +7,11 @@ export default () => {
   return (
     <>
       <h1>{title}</h1>
-
-      <UI />
+      <div className={"row"}>
+        <div className={"col-md-6"}>
+          <UI />
+        </div>
+      </div>
     </>
   );
 };
