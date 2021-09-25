@@ -34,6 +34,7 @@ export default () => {
     value: state.c,
     onChange: (c) => setState({...state, c})
   }), /* @__PURE__ */ React.createElement("button", {
+    className: "btn btn-primary",
     type: "submit"
   }, "Submit")), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("a", {
     href: github.url
