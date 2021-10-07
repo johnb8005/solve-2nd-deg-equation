@@ -8,8 +8,9 @@ This is an example project that goes through the different steps of designing a 
 * test
 * add UI
 * create a version
-* CI
-* deploy <=> CD
+* [CI](https://en.wikipedia.org/wiki/Continuous_integration)
+* version management, [semver](https://en.wikipedia.org/wiki/Software_versioning#Sequence-based_identifiers)
+* deploy <=> [CD](https://en.wikipedia.org/wiki/Continuous_deployment)
 
 video of the repo creation available upon request (~30min)
 
