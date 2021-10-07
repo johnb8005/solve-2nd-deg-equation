@@ -12,3 +12,8 @@ This is an example project that goes through the different steps of designing a 
 * deploy <=> CD
 
 video of the repo creation available upon request (~30min)
+
+
+## Use case : quadratic equation
+
+see https://en.wikipedia.org/wiki/Quadratic_equation for the theory
