@@ -45,7 +45,12 @@ export const getSolutionDelta = (solution: Solution) => {
 export const getStartAndEndFromSolution = (
   solution: Solution
 ): { end: number; start: number } => {
+  if (isNaN(solution[1])) {
+    return { start: solution[0] - 5, end: solution[0] + 5 };
+  }
+
   const solutionDelta = getSolutionDelta(solution);
+
   const solutionMin = Math.min(solution[1], solution[0]);
   const solutionMax = Math.max(solution[1], solution[0]);
   const start = solutionMin - solutionDelta;
