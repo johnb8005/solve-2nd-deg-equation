@@ -7,7 +7,7 @@ const Intro = () => /* @__PURE__ */ React.createElement("p", null, "Solving ", /
 export default () => {
   const [solution, setSolution] = React.useState();
   return /* @__PURE__ */ React.createElement(React.Fragment, null, solution && /* @__PURE__ */ React.createElement(Solution, {
-    solution
+    solutionWCoeff: solution
   }), /* @__PURE__ */ React.createElement(Intro, null), /* @__PURE__ */ React.createElement(Form, {
     onSuccess: setSolution
   }));

@@ -3,7 +3,9 @@ import Input from "../_snowpack/pkg/@nexys/react-bootstrap/dist/form/input/numbe
 import Wrapper from "../_snowpack/pkg/@nexys/react-bootstrap/dist/form/wrapper.js";
 import * as S from "../lib/solve.js";
 import * as U from "./utils.js";
-const Form = ({onSuccess}) => {
+const Form = ({
+  onSuccess
+}) => {
   const [state, setState] = React.useState({});
   const [errors, setErrors] = React.useState({});
   const handleSubmit = (e) => {
@@ -11,7 +13,8 @@ const Form = ({onSuccess}) => {
     const errors2 = {};
     if (U.isNotPartial2ndDeg(state)) {
       try {
-        const s = S.solve2ndDegEquation(state.a, state.b, state.c);
+        const solution = S.solve2ndDegEquation(state.a, state.b, state.c);
+        const s = {solution, coefficients: state};
         onSuccess(s);
       } catch (err) {
         alert(err);
