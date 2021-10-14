@@ -34,7 +34,8 @@ export const getQuadraticFxByCoefficients = (a: number, b: number, c: number) =>
 export const getSolutionDelta = (solution: Solution) => {
   const solutionDelta = Math.abs(solution[1] - solution[0]);
 
-  if (solutionDelta === 0) {
+  if (isNaN(solutionDelta) || solutionDelta === 0) {
+    // default value
     return 3;
   }
 
