@@ -29,8 +29,6 @@ const Solution = ({
         x1={formatNumber(solution[0])}, x2={formatNumber(solution[1])}
       </code>
 
-      <p>here insert graph</p>
-
       <Chart.LineChart label={label} xs={xs} ys={ys} />
     </>
   );
