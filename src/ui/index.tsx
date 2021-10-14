@@ -16,11 +16,13 @@ const Intro = () => (
 );
 
 export default () => {
-  const [solution, setSolution] = React.useState<T.Solution | undefined>();
+  const [solution, setSolution] = React.useState<
+    T.SolutionWCoefficients | undefined
+  >();
 
   return (
     <>
-      {solution && <Solution solution={solution} />}
+      {solution && <Solution solutionWCoeff={solution} />}
 
       <Intro />
 

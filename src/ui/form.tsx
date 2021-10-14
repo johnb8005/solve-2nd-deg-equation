@@ -7,7 +7,11 @@ import * as S from "../lib/solve";
 import * as T from "./type";
 import * as U from "./utils";
 
-const Form = ({ onSuccess }: { onSuccess: (s: T.Solution) => void }) => {
+const Form = ({
+  onSuccess,
+}: {
+  onSuccess: (s: T.SolutionWCoefficients) => void;
+}) => {
   const [state, setState] = React.useState<Partial<T.Input2ndDeg>>({});
 
   const [errors, setErrors] = React.useState<T.Errors>({});
@@ -19,7 +23,9 @@ const Form = ({ onSuccess }: { onSuccess: (s: T.Solution) => void }) => {
 
     if (U.isNotPartial2ndDeg(state)) {
       try {
-        const s = S.solve2ndDegEquation(state.a, state.b, state.c);
+        const solution = S.solve2ndDegEquation(state.a, state.b, state.c);
+
+        const s: T.SolutionWCoefficients = { solution, coefficients: state };
 
         onSuccess(s);
       } catch (err) {
