@@ -6,21 +6,23 @@ import { Data } from "./type";
 const getData = ({
   xs,
   ys,
+  label,
   backgroundColor = "rgb(255, 99, 132)",
   borderColor = "rgba(255, 99, 132, 0.2)",
 }: {
   xs: number[];
   ys: number[];
+  label: string;
   backgroundColor?: string;
   borderColor?: string;
 }): Data => {
-  const labels: string[] = xs.map((x) => String(x));
+  const labels: string[] = xs.map((x) => x.toFixed(2));
 
   return {
     labels,
     datasets: [
       {
-        label: "# of Votes",
+        label,
         data: ys,
         fill: false,
         backgroundColor,
@@ -42,9 +44,17 @@ const options: any = {
   },
 };
 
-export const LineChart = ({ xs, ys }: { xs: number[]; ys: number[] }) => {
-  const data = getData({ xs, ys });
+export const LineChart = ({
+  xs,
+  ys,
+  label,
+}: {
+  xs: number[];
+  ys: number[];
+  label: string;
+}) => {
+  const data = getData({ xs, ys, label });
   return <Line data={data} options={options} />;
 };
 
-export default () => <LineChart xs={[1, 2, 3]} ys={[2, 4, 6]} />;
+export default () => <LineChart label={"test"} xs={[1, 2, 3]} ys={[2, 4, 6]} />;

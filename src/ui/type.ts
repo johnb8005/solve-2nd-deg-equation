@@ -7,3 +7,8 @@ export interface Input2ndDeg {
 export type Errors = { [name in keyof Input2ndDeg]?: string[] };
 
 export type Solution = [number, number];
+
+export interface SolutionWCoefficients {
+  solution: Solution;
+  coefficients: Input2ndDeg;
+}
